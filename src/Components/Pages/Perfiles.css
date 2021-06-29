@@ -1,0 +1,5 @@
+.card-img {
+    width: auto !important;
+    height: 40vh;  
+    object-fit: cover;
+  }

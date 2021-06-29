@@ -1,0 +1,14 @@
+:root {
+  --bg-color: black;
+  --text-color: white;
+  --main-color: rgb(0, 60, 40);
+  --secondary-color: rgb(10, 185, 160);
+}
+
+.app {
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0px;
+  padding: 0px;
+}
