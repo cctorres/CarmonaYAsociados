@@ -1,5 +1,4 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
 import "./Contact.css";
 import emailjs from "emailjs-com";
 
@@ -32,7 +31,7 @@ const Contact = () => {
       <form className="contact-form" onSubmit={sendEmail}>
         <label for="subject">Asunto</label>
         <input
-          class="form-control"
+          className="form-control"
           id="subject"
           placeholder="Escribe un asunto"
           name="subject"
@@ -40,7 +39,7 @@ const Contact = () => {
         ></input>
         <label for="name">Nombre</label>
         <input
-          class="form-control"
+          className="form-control"
           id="name"
           placeholder="Escribe tu nombre"
           name="name"
@@ -49,7 +48,7 @@ const Contact = () => {
         <label for="email">Correo electrónico</label>
         <input
           type="email"
-          class="form-control"
+          className="form-control"
           id="email"
           placeholder="Escriber tu correo"
           name="email"
@@ -57,14 +56,14 @@ const Contact = () => {
         ></input>
         <label for="message">Mensaje</label>
         <textarea
-          class="form-control"
+          className="form-control"
           id="message"
           rows="3"
           placeholder="Haz un resumen de tu caso"
           name="message"
           required
         ></textarea>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           Enviar
         </button>
       </form>

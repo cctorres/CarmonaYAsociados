@@ -1,8 +1,29 @@
 .img-card {
+  padding:10px;
   height: 200px;
 }
 
 .card-perfiles{
   text-align: center;
   width: 80%;
+}
+
+.right-text{
+  padding:10px;
+  padding-left: 20px;
+  text-align: start;
+}
+
+.left-text{
+  padding:10px;
+  padding-right: 20px;
+  text-align: end;
+}
+
+.bg-perfiles{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img-left{
+  text-align: center;
 }
