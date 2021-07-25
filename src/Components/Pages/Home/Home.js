@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
+import MapView from './MapView';
 import "./Home.css";
 
 const Home = () => {
@@ -61,6 +62,8 @@ const Home = () => {
             <div className="vision-img"><h1>Nuestra visión</h1></div>
           </Col>
         </Row>
+        <h3>Encuentranos en Medellín</h3>
+        <MapView/>
       </Container>
     </div>
   );

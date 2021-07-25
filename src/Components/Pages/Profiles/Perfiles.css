@@ -1,0 +1,23 @@
+.perfiles{
+  padding: 0 10% 0 10%;
+}
+
+.profile-left{
+  display: grid;
+  grid-template-columns: 30% auto;
+  text-align: end;
+  padding: 5vh 0 5vh 0;
+}
+
+.profile-right{
+  display: grid;
+  grid-template-columns: 70% auto;
+  text-align: start;
+  padding: 5vh 0 5vh 0;
+}
+
+.img-card{
+  object-fit: cover;
+  height: 20vh;
+  width: 25vw;
+}

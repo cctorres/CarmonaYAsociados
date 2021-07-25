@@ -13,7 +13,7 @@ export default class Header extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
               <Nav.Link href="/perfiles">Perfiles</Nav.Link>
-              <Nav.Link href="/logros">Logros</Nav.Link>
+              <Nav.Link href="/news">Actualidad</Nav.Link>
               <Nav.Link href="/contact">Contacto</Nav.Link>              
             </Nav>            
           </Navbar.Collapse>

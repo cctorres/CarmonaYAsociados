@@ -4,14 +4,13 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import { Button } from "react-bootstrap";
-import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
 
 const Footer = () => {
-  const copyright = "© - Carmona & Asociados - 2021";
+  const copyright = "© - NERV Corporation - 2021";
 
   const goToFBPage = () => {
-    window.location.replace("https://www.facebook.com/carmonaos.asociados");
+    window.location.replace("https://es-la.facebook.com/EvangelionMovie");
   };
 
   const WPPMessage = () => {
@@ -20,25 +19,23 @@ const Footer = () => {
     );
   };
   return (
-    <div className="footer">
-      <Container>
-        <Row>
-          <Col>
-            Visitanos en:
-            <Button variant="link" onClick={goToFBPage}>
-              <FacebookIcon />
-            </Button>
-            o escribenos a nuestro:
-            <Button variant="link" onClick={WPPMessage}>
-              <WhatsAppIcon style={{ color: "green" }} />
-            </Button>
-          </Col>
-          <Col>
-            <PhoneAndroidIcon />  +57 310 529 9124
-            <MailOutlineIcon />  c.torresalzate@gmail.com
-          </Col>
-        </Row>
-      </Container>
+    <div className="footer-container">
+      <div className="buttons-footer-container">
+        <div className="social-media-footer-container">
+          Visitanos en:
+          <Button variant="link" onClick={goToFBPage}>
+            <FacebookIcon />
+          </Button>
+          o escribenos a nuestro:
+          <Button variant="link" onClick={WPPMessage}>
+            <WhatsAppIcon style={{ color: "green" }} />
+          </Button>
+        </div>
+        <div className="contact-footer-container">
+          <PhoneAndroidIcon /> +57 310 529 9124
+          <MailOutlineIcon /> c.torresalzate@gmail.com
+        </div>
+      </div>
       <p>{copyright}</p>
     </div>
   );

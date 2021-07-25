@@ -29,7 +29,7 @@ const Contact = () => {
         tiempo posible.
       </h1>
       <form className="contact-form" onSubmit={sendEmail}>
-        <label for="subject">Asunto</label>
+        <label htmlFor="subject">Asunto</label>
         <input
           className="form-control"
           id="subject"
@@ -37,7 +37,7 @@ const Contact = () => {
           name="subject"
           required
         ></input>
-        <label for="name">Nombre</label>
+        <label htmlFor="name">Nombre</label>
         <input
           className="form-control"
           id="name"
@@ -45,7 +45,7 @@ const Contact = () => {
           name="name"
           required
         ></input>
-        <label for="email">Correo electrónico</label>
+        <label htmlFor="email">Correo electrónico</label>
         <input
           type="email"
           className="form-control"
@@ -54,7 +54,7 @@ const Contact = () => {
           name="email"
           required
         ></input>
-        <label for="message">Mensaje</label>
+        <label htmlFor="message">Mensaje</label>
         <textarea
           className="form-control"
           id="message"
