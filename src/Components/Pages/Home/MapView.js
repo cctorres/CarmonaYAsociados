@@ -4,13 +4,14 @@ import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import IconSVG from '../../../assets/logo.jpg';
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
+import './MapView.css'
 
 const MapView = () => {
-  const position = [6.2504087, -75.5685272];
+  const position = [6.2505314, -75.5707974];
 
   return (
-    <div>
-      <Map center={position} zoom={20}>
+    <div className="map-view-container">
+      <Map center={position} zoom={15}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -26,8 +27,8 @@ const MapView = () => {
           }
         >
           <Popup>
-           Ed Coltabaco. <br /> Of. 1012
-           <img src={IconSVG}></img>
+           Ed Inversiones e Industria. <br /> Of. 1202 - 1204 <br /> Calle 51 # 51 - 31
+           <img className="pop-up-img" src={IconSVG} alt="Carmona-Asociados"></img>
           </Popup>
         </Marker>
       </Map>

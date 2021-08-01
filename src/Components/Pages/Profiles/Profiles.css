@@ -1,4 +1,4 @@
-.perfiles{
+.profile-container{
   padding: 0 10% 0 10%;
 }
 
@@ -6,14 +6,19 @@
   display: grid;
   grid-template-columns: 30% auto;
   text-align: end;
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 2vw 5vh 0;
 }
 
 .profile-right{
   display: grid;
   grid-template-columns: 70% auto;
   text-align: start;
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 0 5vh 2vw;
+}
+
+.title-profile{
+  color: var(--bg-color);
+  background-color: var(--main-color);
 }
 
 .img-card{

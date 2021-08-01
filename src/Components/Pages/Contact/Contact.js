@@ -24,10 +24,12 @@ const Contact = () => {
   }
   return (
     <div className="contact text-center">
-      <h1>
+      <p>
         Envíanos un correo contándonos tu caso y te responderemos en el menor
         tiempo posible.
-      </h1>
+        <br/>
+        También puedes enviarnos un mensaje directo a nuestro whatsapp presionando el botón en la barra superio
+      </p>
       <form className="contact-form" onSubmit={sendEmail}>
         <label htmlFor="subject">Asunto</label>
         <input
@@ -63,7 +65,7 @@ const Contact = () => {
           name="message"
           required
         ></textarea>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-success">
           Enviar
         </button>
       </form>

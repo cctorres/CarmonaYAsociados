@@ -1,16 +1,13 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { Container, Row, Col } from "react-bootstrap";
-import MapView from './MapView';
+import MapView from "./MapView";
+import HomeSocial from "./HomeSocial";
 import "./Home.css";
 
 const Home = () => {
-  const title = "Carmona & Asociados";
-
   return (
     <div className="home text-center">
-      <h1>{title}</h1>
-      <Carousel fade>
+      <Carousel>
         <Carousel.Item>
           <img
             className="carousel-img"
@@ -26,45 +23,22 @@ const Home = () => {
           />
         </Carousel.Item>
       </Carousel>
-      <hr class="solid" />
-      <Container>
-        <Row>
-          <p>
-            Nuestra empresa no es sólo una persona. Es un conjunto de seres
-            humanos con ideales, sueños, deseos, ganas, profesionalismo, entrega
-            y dispuestos a dar todo lo mejor de ellos en procura de cumplir
-            nuestra visión corporativa.
-          </p>
-        </Row>
-        <Row>
-          <Col className="mision">
-            <div className="mision-img"><h1>Nuestra misión</h1></div>
-          </Col>
-          <Col>
-            <p>
-              Nuestra empresa no es sólo una persona. Es un conjunto de seres
-              humanos con ideales, sueños, deseos, ganas, profesionalismo,
-              entrega y dispuestos a dar todo lo mejor de ellos en procura de
-              cumplir nuestra visión corporativa.
-            </p>
-          </Col>
-        </Row>
-        <Row>          
-          <Col>
-            <p>
-              Nuestra empresa no es sólo una persona. Es un conjunto de seres
-              humanos con ideales, sueños, deseos, ganas, profesionalismo,
-              entrega y dispuestos a dar todo lo mejor de ellos en procura de
-              cumplir nuestra visión corporativa.
-            </p>
-          </Col>
-          <Col className="vision">
-            <div className="vision-img"><h1>Nuestra visión</h1></div>
-          </Col>
-        </Row>
-        <h3>Encuentranos en Medellín</h3>
-        <MapView/>
-      </Container>
+      <p>
+        Nuestra empresa no es sólo una persona. Es un conjunto de seres humanos
+        con ideales, sueños, deseos, ganas, profesionalismo, entrega y
+        dispuestos a dar todo lo mejor de ellos en procura de cumplir nuestra
+        visión corporativa.
+      </p>
+      <div className="social-container">
+        <div className="map-container">
+          <h3 className="title-h3">Encuentranos en Medellín</h3>
+          <MapView />
+        </div>
+        <div className="Home-social-container">          
+      <h3 className="title-h3">Estamos a solo un clic, síguenos en Facebook</h3>
+          <HomeSocial />
+        </div>
+      </div>
     </div>
   );
 };

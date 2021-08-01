@@ -1,0 +1,63 @@
+.about-container {
+  padding: 2vh 2vw;
+}
+
+.nosotros-img {
+  width: 100vw;
+  height: 20vh;
+  object-fit: cover;
+}
+.mision {
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+
+.mision-img {
+  display: grid;
+  align-items: center;
+  color: var(--bg-color);
+  padding: 1vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2015/11/19/21/14/glasses-1052023_960_720.jpg");
+}
+
+.mision-img-text {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
+
+.vision-img-text {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
+
+.vision {
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
+.img-filter {
+  background-color: var(--main-color-opacity);
+}
+.vision-img {
+  display: grid;
+  align-items: center;
+  color: var(--bg-color);
+  padding: 1vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2015/07/27/19/12/library-863148_960_720.jpg");
+}
+
+@media (max-width: 600px) {
+  .mision {
+    display: flex;
+  }
+
+  .vision {
+    display: flex;
+  }
+}

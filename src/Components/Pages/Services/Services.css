@@ -1,0 +1,73 @@
+.services-container {
+  padding: 2vh 2vw;
+}
+
+.servicios-img {
+  width: 100vw;
+  height: 20vh;
+  object-fit: cover;
+}
+.juridico {
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+
+.juridico-img {
+  display: grid;
+  align-items: center;
+  color: var(--bg-color);
+  padding: 1vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_960_720.jpg");
+}
+
+.juridico-img-text {
+  display: grid;
+  grid-template-columns: 50% auto;
+  text-align: start;
+  padding: 1vh;
+  color: var(--bg-color);
+  background-color: var(--main-color);
+}
+
+.investigacion-img-text {
+  display: grid;
+  grid-template-columns: 50% auto;
+  text-align: start;
+  padding: 1vh;
+  color: var(--bg-color);
+  background-color: var(--main-color);
+}
+
+.investigacion {
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
+.img-filter {
+  background-color: var(--main-color-opacity);
+}
+.investigacion-img {
+  display: grid;
+  align-items: center;
+  color: var(--bg-color);
+  padding: 1vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/21/00/26/philatelist-1844080_960_720.jpg");
+}
+
+@media (max-width: 600px) {
+  .juridico {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .investigacion {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

@@ -1,13 +1,13 @@
 import React from "react";
-import "./Perfiles.css";
+import "./Profiles.css";
 
-const Perfiles = () => {
+const Profile = () => {
   return (
-    <div className="perfiles">
-      <h1 className="text-center">
+    <div className="profiles-container">
+      <p className="text-center">
         En nuestra empresa contamos con distintos profesionales de acuerdo a los
         perfiles y labores de nuestra profesión
-      </h1>
+      </p>
       <div className="profile-left">
         <div className="profile-img-left">
           <img
@@ -17,7 +17,7 @@ const Perfiles = () => {
           />
         </div>
         <div className="profile-text-left">
-          <p>Satoru Gojo</p>
+          <p className="title-profile">Satoru Gojo</p>
           <p>
             Es uno de los personajes de la serie manga Tokyo Metropolitan Curse
             Technical School y uno de los protagonistas de la serie secuela,
@@ -31,7 +31,7 @@ const Perfiles = () => {
       </div>
       <div className="profile-right">
         <div className="profile-text-right">
-          <p>Yuji Itadori</p>
+          <p className="title-profile">Yuji Itadori</p>
           <p>
             Es el protagonista de la serie manga Jujutsu Kaisen. Es un
             estudiante de primer año del Colegio Técnico de Magia Metropolitana
@@ -55,7 +55,7 @@ const Perfiles = () => {
           />
         </div>
         <div className="profile-text-left">
-          <p>Megumi Fushiguro</p>
+          <p className="title-profile">Megumi Fushiguro</p>
           <p>
             Es uno de los protagonistas de la serie manga Jujutsu Kaisen. Es un
             estudiante de primer año del Colegio Técnico de Magia Metropolitana
@@ -65,7 +65,7 @@ const Perfiles = () => {
       </div>
       <div className="profile-right">
         <div className="profile-text-right">
-          <p>Nobara Kugisaki</p>
+          <p className="title-profile">Nobara Kugisaki</p>
           <p>
             Es una de las protagonistas de la serie manga Jujutsu Kaisen. Es una
             estudiante de primer año del Colegio Técnico de Magia Metropolitana
@@ -84,4 +84,4 @@ const Perfiles = () => {
   );
 };
 
-export default Perfiles;
+export default Profile;
